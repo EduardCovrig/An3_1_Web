@@ -9,5 +9,4 @@ app.get('/',(req,res)=>{
 app.get('/ping/',(req,res)=>{
     res.send('pong');
 });
-app.pat
 app.listen(8080);
