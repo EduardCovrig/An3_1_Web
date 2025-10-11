@@ -1,1 +1,0 @@
-ndexOf(type)
