@@ -1,6 +1,7 @@
+//(Tema) - Implementați o funcție care face compresie RLE (Run Length Encoding) asupra unui fișier text.
 const fs=require("fs");
 
-function RFECompression()
+function RLECompression()
 {
     const data=fs.readFileSync("tema_input.txt","utf-8");
     console.log("Initial data: " + data);
@@ -18,4 +19,4 @@ function RFECompression()
     return result;
 }
 
-console.log("Fisierul dupa compresie: " + RFECompression());
+console.log("Fisierul dupa compresie: " + RLECompression());
