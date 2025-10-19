@@ -1,0 +1,24 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <div>
+            <form>
+                <input id="inputName" type="text"/> <br/> <br/>
+                <input id="inputAge" type="number"> <br> <br>
+                <input id="submitData" value="Submit" type="button" onClick="sendData()"> <br> <br>
+            </form>
+        </div>
+        <div id="tableData">
+        </div>
+        <div>
+            <form>
+                <label for ="idTxt">Id-ul cautat:</label>
+                <input id="idTxt" type="text" placeholder="Introdu id">
+                <input id="submitId" type="button" value="Cauta" onClick="getById()">
+            </form>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script6_get_post.js"></script>
+</html>

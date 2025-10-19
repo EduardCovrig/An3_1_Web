@@ -1,0 +1,46 @@
+<html>
+<head>
+    <script>
+        window.onload= () =>
+        {
+            const button=document.getElementById("myBtn");
+            
+            const myEvent=new Event("myEvt");
+
+
+            const clickHandler = () =>
+            {
+                document.dispatchEvent(myEvent);
+            }
+
+            const myEvtHandler = () =>
+            {
+                console.log("Butonul a fost apasat");
+            }
+
+            button.onclick=clickHandler;
+            //button.addEventListener("click",clickHandler);
+            document.addEventListener("myEvt",myEvtHandler);
+
+            //alegeți un element din DOM
+            // și tratați un eveniment trimis de acesta. 
+            //Creați un eveniment custom pe care îl 
+            //veți trimite și trata odata cu 
+            //tratarea evenimentului ales al elementului din DOM.
+            const body=document.body;
+            const moveEvent=new Event("moveEvt");
+            body.onmousemove=() => document.dispatchEvent(moveEvent); //moveHandler
+            const moveEvtHandler= () =>
+            {
+                console.log("Mouse-ul s-a miscat");
+            }
+            document.addEventListener("moveEvt",moveEvtHandler);
+        
+        }
+        
+    </script>
+</head>
+<body>
+    <button id="myBtn">Click me!</button>
+</body>
+</html>
