@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif
+            }
+            .mainform
+            {
+               background-color: lightgray;
+               padding: 10px;
+            }
+            input[type="text"], select
+            {
+                width: 100%;
+                margin: 10px 0px;
+                padding: 12px 10px;
+            }
+            input[name="subject"]
+            {
+                height:40px;
+                width: 100%;
+                margin: 10px 0px;
+                padding: 20px 0px 100px 5px;
+                text-align:start;
+                vertical-align: top;
+                box-sizing: border-box;
+            }
+            .submit-button
+            {
+                background-color:green;
+                padding: 10px;
+                border: none;
+            }
+            .submit-button:hover
+            {
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Contact Form</h1>
+        <form action="javascript:" method="post">
+            <div class="mainform">
+                <label for="firstname">First Name</label>
+                <input type="text" placeholder="Your name" name="firstname" required>
+                <label for="lastname">Last Name</label>
+                <input type="text" placeholder="Your last name" name="lastname" required>
+                <label for="country">Country</label>
+                <select name="country">
+                    <option value="Romania">Romania</option>
+                    <option value="Spain">Spain</option>
+                    <option value="France">France</option>
+                </select>
+                <label for="subject">Subject</label>
+                <input name="subject" id="subject" placeholder="Write something...">
+                <button class="submit-button" type="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>

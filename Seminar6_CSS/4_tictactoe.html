@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style>
+            .container h1
+            {
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .square 
+            {
+                width: 50px;
+                height:50px;
+                display: inline-block;
+            }
+            .left
+            {
+                border-right: 1px solid black;
+            }
+            .row:nth-child(3) .square
+            {
+                border-top: 1px solid Black;
+                border-bottom: 1px solid Black;
+                
+            }
+            .right
+            {
+                border-left: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>Tic Tac Toe</h1>
+            </div>
+            <div class="row">
+                <div class="top left square"></div>
+                <div class="top middle square"></div>
+                <div class="top right square"></div>
+            </div>
+            <div class="row">
+                <div class="middle left square"></div>
+                <div class="middle middle square"></div>
+                <div class="middle right square"></div>
+            </div>
+            <div class="row">
+                <div class="bottom left square"></div>
+                <div class="bottom middle square"></div>
+                 <div class="bottom right square"></div>
+            </div>
+        </div>
+    </body>
+</html>
