@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    padding: 32px;
+    color: white;
+}
+
+.container {
+    background-color: #c21322;
+}
+.container > .column
+{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+.column > .column-item
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.column-item:hover
+{
+    background-color: lightgray;
+}

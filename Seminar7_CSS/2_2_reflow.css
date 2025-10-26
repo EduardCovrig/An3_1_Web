@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    padding: 32px;
+    font-size: 45px;
+}
+
+.input-group {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.input-group label 
+{
+    margin-right: 15px;
+    width: auto;
+    text-align: right;
+}
+.input-group input
+{
+    width: auto;
+    height: auto;
+    font-size: 45px;
+}
+
+.submit-button {
+    padding: 15px;
+    width: 255px;
+    font-size: 45px;
+    color: darkblue;
+    background-color: lightgray;
+}
